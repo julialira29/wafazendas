@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - WA Fazendas Agro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        
+        }
+
+        table {
+            width: 100%;
+            max-width: 100%3;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        .tabela,
+        .tabela th,
+        .tabela td {
+            border: 1px solid black;
+        }
+
+        .tabela th,
+        .tabela td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Alinhamento da logo com as imagens */
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .logo img {
+            width: 200px; /* Ajuste o tamanho das imagens */
+            height: auto;
+        }
+
+        .logo h2 {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .logo p {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .dados-empresa {
+            text-align: center !important;
+            font-size: 20px;
+            font-weight: bold;
+        background-color: rgb(146, 146, 146);
+        }
+
+        .empresadados {
+            text-align: center !important;
+            font-weight: bold !important;
+            font-size: 18px !important;
+            padding: 10px;
+            background-color: rgb(60, 174, 250);
+        }
+
+        .signatures {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .signatures div {
+            margin-top: 20px;
+            height: 40px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 6px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #dataHora {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: black;
+            text-align: center;
+            background-color: rgb(60, 174, 250);
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .descricao-equipamentos {
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(60, 174, 250);
+        }
+
+        .descricao-equipamentos td {
+            text-align: center;
+        }
+
+        .whatsicon {
+            width: 10px;
+            height: 10px;
+            margin-right: 1px;
+        }
+        .highligth{
+          background-color: rgb(60, 174, 250);
+        }
+        @media print {
+            .buttons{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tabela">
+        <!-- Logo e Nome da Empresa -->
+        <tr>
+            <td colspan="4">
+                <div class="logo">
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+                        <img src="WhatsApp Image 2024-08-27 at 13.47.06.jpeg" alt="Sol">
+                        <h2>WA FAZENDAS AGRO</h2>
+                        <img src="WhatsApp Image 2024-08-27 at 13.47.42.jpeg" alt="Placa Solar">
+                    </div>
+                    <p>Aqui o Sol brilha para todos.</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="empresadados">
+                DADOS DA EMPRESA
+            </td>
+        </tr>
+        <!-- Dados da Empresa -->
+        <tr>
+            <td colspan="4" class="dados-empresa">
+                Razão social: WA Fazendas Brasil Agronegócio LTDA - CNPJ: 31.532.889/0001-81 - IE: 29.490.350-7 <br>
+                Rua 02, lotes 05 e 06, Qd. 06, Parque Agroindustrial José Antônio de Deus, Paraíso do Tocantins - TO
+                <br>
+                CEP: 77.600-000 <br>
+                Contatos: (63) 99263-5871<img src="whatssss.jpg" class="whatsicon" alt="whatsapp"> / (63) 99953-2184<img src="whatssss.jpg" class="whatsicon" alt="whatsapp">
+            </td>
+        </tr>
+
+        <!-- Dados do Pedido -->
+        <tr>
+            <th>Nº do Pedido:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Cliente:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>CPF:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Endereço:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Bairro:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Cidade/UF:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <th>CEP:</th>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+
+        <!-- Descrição dos Equipamentos -->
+        <tr class="descricao-equipamentos">
+            <td colspan="4">
+                DESCRIÇÃO DOS EQUIPAMENTOS DO SISTEMA SOLAR
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text"></td>
+        </tr>
+        
+
+        <!-- Valor Total -->
+        <tr>
+            <th>VALOR TOTAL R$:</th>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+
+        <!-- Data de Entrega, Condições de Pagamento e Montagem -->
+        <tr>
+            <th>Data para Entrega:</th>
+            <td><input type="text"></td>
+            <th>Condições de Pagamento:</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>Montagem:</th>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <th colspan="4">
+                Obs.: Após a assinatura ou concordância via mensagem de texto ou áudio desse pedido, não será permitido
+                desistência. Caso haja desistência será cobrado multa de 20% do valor do pedido!
+            </th>
+        </tr>
+        <tr>
+            <td colspan="4" class="signatures" style="text-align: center;">
+                <div style="display: inline-block; margin-right: 500px;">
+                    <div style="font-family: 'Brush Script MT', cursive; font-size: 20px; margin-bottom: 2px;">Wesney Marques Alves</div> <!-- Ajuste no espaço abaixo -->
+                    <div style="width: 100%; height: 5px; margin: 5px 0;"></div> <!-- Linha mais alta -->
+                    <div>Assinatura da Gerência</div>
+                </div>
+                <div style="display: inline-block;">
+                    <div style="font-family: 'Brush Script MT', cursive; font-size: 18px;"></div> <!-- Adicionei um nome para exemplo -->
+                    <div style="border-top: 1px solid black; width: 150%; height: 10px; margin: 5px auto 15px; display: block;"></div> <!-- Linha centralizada -->
+                    <div style="text-align: center;">Assinatura do Cliente</div> <!-- Centralizando o texto -->
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4" id="dataHora">
+                Data e hora da realização do pedido:
+                <div id="dataHoraDisplay"></div>
+            </th>
+        </tr>
+    </table>
+
+    <!-- Botões de Enviar e Imprimir -->
+    <div class="buttons">
+        <button onclick="window.print()">Imprimir</button>
+    </div>
+
+    <script>
+        function atualizarDataHora() {
+            const agora = new Date();
+            const data = agora.toLocaleDateString('pt-BR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const hora = agora.toLocaleTimeString('pt-BR', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+
+            document.getElementById('dataHoraDisplay').innerHTML = data + ' - ' + hora;
+        }
+
+        setInterval(atualizarDataHora, 1000); // Atualiza a cada 1 segundo
+    </script>
+
+</body>
+
+</html>
